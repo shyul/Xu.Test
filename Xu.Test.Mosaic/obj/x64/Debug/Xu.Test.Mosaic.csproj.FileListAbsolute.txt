@@ -1,0 +1,10 @@
+C:\Users\uxli\GitHub\Xu\bin\Debug\Mosaic.exe.config
+C:\Users\uxli\GitHub\Xu\bin\Debug\Mosaic.exe
+C:\Users\uxli\GitHub\Xu\bin\Debug\Mosaic.pdb
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Xu.Test.Mosaic.csprojAssemblyReference.cache
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Mosaic.Properties.Resources.resources
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Xu.Test.Mosaic.csproj.GenerateResource.cache
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Xu.Test.Mosaic.csproj.CoreCompileInputs.cache
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Xu.Test.Mosaic.csproj.CopyComplete
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Mosaic.exe
+C:\Users\uxli\GitHub\Xu\Xu.Test.Mosaic\obj\x64\Debug\Mosaic.pdb

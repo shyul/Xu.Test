@@ -1,0 +1,642 @@
+
+*** Running vivado
+    with args -log axi_dmac.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_dmac.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source axi_dmac.tcl -notrace
+Command: synth_design -top axi_dmac -part xczu3cg-sfvc784-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3cg'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 43868
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1243.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap.v:38]
+	Parameter DISABLE_DEBUG_REGISTERS bound to: 0 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_DEST bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter DMA_TYPE_DEST bound to: 0 - type: integer 
+	Parameter DMA_TYPE_SRC bound to: 2 - type: integer 
+	Parameter DMA_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DMA_LENGTH_WIDTH bound to: 24 - type: integer 
+	Parameter DMA_LENGTH_ALIGN bound to: 3 - type: integer 
+	Parameter DMA_CYCLIC bound to: 1 - type: integer 
+	Parameter HAS_DEST_ADDR bound to: 1'b1 
+	Parameter HAS_SRC_ADDR bound to: 1'b0 
+	Parameter DMA_2D_TRANSFER bound to: 0 - type: integer 
+	Parameter SYNC_TRANSFER_START bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap.v:180]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap_request' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:38]
+	Parameter DISABLE_DEBUG_REGISTERS bound to: 0 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_DEST bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter DMA_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DMA_LENGTH_WIDTH bound to: 24 - type: integer 
+	Parameter DMA_LENGTH_ALIGN bound to: 3 - type: integer 
+	Parameter DMA_CYCLIC bound to: 1 - type: integer 
+	Parameter HAS_DEST_ADDR bound to: 1'b1 
+	Parameter HAS_SRC_ADDR bound to: 1'b0 
+	Parameter DMA_2D_TRANSFER bound to: 0 - type: integer 
+	Parameter SYNC_TRANSFER_START bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:148]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 26 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter ASYNC_CLK bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_address_generator' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo_address_generator.v:37]
+	Parameter ASYNC_CLK bound to: 0 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter ALMOST_EMPTY_THRESHOLD bound to: 2'b00 
+	Parameter ALMOST_FULL_THRESHOLD bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_address_generator' (1#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo_address_generator.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo' (2#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+WARNING: [Synth 8-7023] instance 'i_transfer_lenghts_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap_request' (3#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap_request.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/common/up_axi.v:38]
+	Parameter AXI_ADDRESS_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (4#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/common/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap' (5#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_regmap.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_transfer' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_transfer.v:38]
+	Parameter DMA_DATA_WIDTH_SRC bound to: 64 - type: integer 
+	Parameter DMA_DATA_WIDTH_DEST bound to: 64 - type: integer 
+	Parameter DMA_LENGTH_WIDTH bound to: 24 - type: integer 
+	Parameter DMA_LENGTH_ALIGN bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_DEST bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter DMA_TYPE_DEST bound to: 0 - type: integer 
+	Parameter DMA_TYPE_SRC bound to: 2 - type: integer 
+	Parameter DMA_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DMA_2D_TRANSFER bound to: 0 - type: integer 
+	Parameter ASYNC_CLK_REQ_SRC bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_SRC_DEST bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_DEST_REQ bound to: 1 - type: integer 
+	Parameter AXI_SLICE_DEST bound to: 0 - type: integer 
+	Parameter AXI_SLICE_SRC bound to: 0 - type: integer 
+	Parameter MAX_BYTES_PER_BURST bound to: 128 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter FIFO_SIZE bound to: 8 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_LENGTH_WIDTH_SRC bound to: 8 - type: integer 
+	Parameter AXI_LENGTH_WIDTH_DEST bound to: 8 - type: integer 
+	Parameter ENABLE_DIAGNOSTICS_IF bound to: 0 - type: integer 
+	Parameter ALLOW_ASYM_MEM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_reset_manager' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_reset_manager.v:38]
+	Parameter ASYNC_CLK_REQ_SRC bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_SRC_DEST bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_DEST_REQ bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_reset_manager.v:156]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 1 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (6#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_reset_manager' (7#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_reset_manager.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dmac_request_arb' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:38]
+	Parameter DMA_DATA_WIDTH_SRC bound to: 64 - type: integer 
+	Parameter DMA_DATA_WIDTH_DEST bound to: 64 - type: integer 
+	Parameter DMA_LENGTH_WIDTH bound to: 24 - type: integer 
+	Parameter DMA_LENGTH_ALIGN bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_DEST bound to: 3 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter DMA_TYPE_DEST bound to: 0 - type: integer 
+	Parameter DMA_TYPE_SRC bound to: 2 - type: integer 
+	Parameter DMA_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter ASYNC_CLK_REQ_SRC bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_SRC_DEST bound to: 1 - type: integer 
+	Parameter ASYNC_CLK_DEST_REQ bound to: 1 - type: integer 
+	Parameter AXI_SLICE_DEST bound to: 0 - type: integer 
+	Parameter AXI_SLICE_SRC bound to: 0 - type: integer 
+	Parameter MAX_BYTES_PER_BURST bound to: 128 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter FIFO_SIZE bound to: 8 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter AXI_LENGTH_WIDTH_SRC bound to: 8 - type: integer 
+	Parameter AXI_LENGTH_WIDTH_DEST bound to: 8 - type: integer 
+	Parameter ENABLE_DIAGNOSTICS_IF bound to: 0 - type: integer 
+	Parameter ALLOW_ASYM_MEM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dmac_dest_mm_axi' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/dest_axi_mm.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter DMA_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter DMA_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH bound to: 3 - type: integer 
+	Parameter BEATS_PER_BURST_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_BYTES_PER_BURST bound to: 128 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter AXI_LENGTH_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dmac_address_generator' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/address_generator.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter DMA_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter DMA_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter BEATS_PER_BURST_WIDTH bound to: 4 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH bound to: 3 - type: integer 
+	Parameter LENGTH_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dmac_address_generator' (8#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/address_generator.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dmac_response_handler' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/response_handler.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dmac_response_handler' (9#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/response_handler.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'dmac_dest_mm_axi' (10#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/dest_axi_mm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized0' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 0 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized0' (10#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_src_dest_bl_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+WARNING: [Synth 8-7023] instance 'i_src_dest_bl_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:429]
+INFO: [Synth 8-6157] synthesizing module 'dmac_src_fifo_inf' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter BEATS_PER_BURST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dmac_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/data_mover.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter BEATS_PER_BURST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dmac_data_mover' (11#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/data_mover.v:38]
+WARNING: [Synth 8-7071] port 'rewind_req_valid' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'rewind_req_ready' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'rewind_req_data' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'block_descr_to_dst' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'source_id' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'source_eot' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7071] port 'm_axi_partial_burst' of module 'dmac_data_mover' is unconnected for instance 'i_data_mover' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+WARNING: [Synth 8-7023] instance 'i_data_mover' of module 'dmac_data_mover' has 29 connections declared, but only 22 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'dmac_src_fifo_inf' (12#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/src_fifo_inf.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 4 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (12#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_event' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_event.v:38]
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized1' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized1' (12#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_event' (13#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_cdc/sync_event.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_register_slice.v:38]
+	Parameter DATA_WIDTH bound to: 69 - type: integer 
+	Parameter FORWARD_REGISTERED bound to: 0 - type: integer 
+	Parameter BACKWARD_REGISTERED bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice' (14#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_register_slice.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_burst_memory' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_burst_memory.v:38]
+	Parameter DATA_WIDTH_SRC bound to: 64 - type: integer 
+	Parameter DATA_WIDTH_DEST bound to: 64 - type: integer 
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_BYTES_PER_BURST bound to: 128 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter DMA_LENGTH_ALIGN bound to: 3 - type: integer 
+	Parameter ENABLE_DIAGNOSTICS_IF bound to: 0 - type: integer 
+	Parameter ALLOW_ASYM_MEM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_src' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_resize_src.v:43]
+	Parameter DATA_WIDTH_SRC bound to: 64 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter DATA_WIDTH_MEM bound to: 64 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_MEM bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_src' (15#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_resize_src.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ad_mem_asym' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/common/ad_mem_asym.v:41]
+	Parameter A_ADDRESS_WIDTH bound to: 7 - type: integer 
+	Parameter A_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter B_ADDRESS_WIDTH bound to: 7 - type: integer 
+	Parameter B_DATA_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem_asym' (16#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/common/ad_mem_asym.v:41]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_dest' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_resize_dest.v:38]
+	Parameter DATA_WIDTH_DEST bound to: 64 - type: integer 
+	Parameter DATA_WIDTH_MEM bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_dest' (17#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_resize_dest.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_burst_memory' (18#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_burst_memory.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice__parameterized0' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_register_slice.v:38]
+	Parameter DATA_WIDTH bound to: 73 - type: integer 
+	Parameter FORWARD_REGISTERED bound to: 0 - type: integer 
+	Parameter BACKWARD_REGISTERED bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice__parameterized0' (18#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_register_slice.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized1' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 30 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 0 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized1' (18#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+WARNING: [Synth 8-7023] instance 'i_dest_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1028]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized2' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 67 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 0 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized2' (18#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+WARNING: [Synth 8-7023] instance 'i_src_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:1056]
+INFO: [Synth 8-6157] synthesizing module 'dmac_request_generator' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_generator.v:38]
+	Parameter ID_WIDTH bound to: 4 - type: integer 
+	Parameter BURSTS_PER_TRANSFER_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dmac_request_generator' (19#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_generator.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_response_manager' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:38]
+	Parameter DMA_DATA_WIDTH_SRC bound to: 64 - type: integer 
+	Parameter DMA_DATA_WIDTH_DEST bound to: 64 - type: integer 
+	Parameter DMA_LENGTH_WIDTH bound to: 24 - type: integer 
+	Parameter BYTES_PER_BURST_WIDTH bound to: 7 - type: integer 
+	Parameter BYTES_PER_BEAT_WIDTH_SRC bound to: 3 - type: integer 
+	Parameter ASYNC_CLK_DEST_REQ bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized3' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 0 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized3' (19#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/util_axis_fifo/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+WARNING: [Synth 8-7023] instance 'i_dest_response_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_response_manager' (20#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_response_manager.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'dmac_request_arb' (21#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/request_arb.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_transfer' (22#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac_transfer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac' (23#1) [B:/test_dmac/dmac_ip/dmac_ip.srcs/sources_1/imports/axi_dmac/axi_dmac.v:38]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1243.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1243.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3cg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu3cg-sfvc784-1-e
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1243.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_dmac_reset_manager'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'dmac_request_generator'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_dmac_response_manager'
+INFO: [Synth 8-6904] The RAM "util_axis_fifo:/fifo.sync_clocks.ram_reg" of size (depth=4 x width=26) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          STATE_DO_RESET |                           000001 |                              000
+             STATE_RESET |                           000010 |                              001
+          STATE_DISABLED |                           000100 |                              010
+           STATE_STARTUP |                           001000 |                              011
+           STATE_ENABLED |                           010000 |                              100
+          STATE_SHUTDOWN |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_dmac_reset_manager'
+INFO: [Synth 8-6904] The RAM "axi_dmac_burst_memory:/burst_len_mem_reg" of size (depth=8 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              000 |                              000
+            STATE_GEN_ID |                              001 |                              001
+         STATE_REWIND_ID |                              010 |                              010
+           STATE_CONSUME |                              011 |                              011
+         STATE_WAIT_LAST |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dmac_request_generator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              000 |                              000
+               STATE_ACC |                              001 |                              001
+       STATE_WRITE_RESPR |                              010 |                              010
+        STATE_ZERO_COMPL |                              011 |                              011
+      STATE_WRITE_ZRCMPL |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_dmac_response_manager'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1243.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   24 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 43    
++---XORs : 
+	                2 Bit    Wide XORs := 2     
++---Registers : 
+	               67 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 3     
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 29    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 106   
++---RAMs : 
+	               8K Bit	(128 X 64 bit)          RAMs := 1     
+	              104 Bit	(4 X 26 bit)          RAMs := 1     
+	               40 Bit	(8 X 5 bit)          RAMs := 1     
++---Muxes : 
+	  16 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	  15 Input   32 Bit        Muxes := 1     
+	   6 Input   21 Bit        Muxes := 1     
+	   3 Input   17 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 8     
+	  15 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 49    
+	   5 Input    3 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 69    
+	   5 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "axi_dmac/i_regmap/i_regmap_request/i_transfer_lenghts_fifo/fifo.sync_clocks.ram_reg" of size (depth=4 x width=26) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "axi_dmac/i_transfer/i_request_arb/eot_mem_dest_reg" of size (depth=16 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "axi_dmac/i_transfer/i_request_arb/i_store_and_forward/burst_len_mem_reg" of size (depth=8 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "axi_dmac/i_regmap/i_regmap_request/i_transfer_lenghts_fifo/fifo.sync_clocks.ram_reg" of size (depth=4 x width=26) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "axi_dmac/i_transfer/i_request_arb/eot_mem_dest_reg" of size (depth=16 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|axi_dmac    | i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg | 128 x 64(NO_CHANGE)    | W |   | 128 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                 | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|axi_dmac    | i_regmap/i_regmap_request/i_transfer_lenghts_fifo/fifo.sync_clocks.ram_reg | Implied   | 4 x 26               | RAM32M16 x 2  | 
+|axi_dmac    | i_transfer/i_request_arb/eot_mem_src_reg                                   | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|axi_dmac    | i_transfer/i_request_arb/eot_mem_dest_reg                                  | Implied   | 16 x 1               | RAM16X1D x 2  | 
+|axi_dmac    | i_transfer/i_request_arb/i_store_and_forward/burst_len_mem_reg             | Implied   | 8 x 4                | RAM32M16 x 1  | 
+|axi_dmac    | i_transfer/i_request_arb/i_dest_dma_mm/bl_mem_reg                          | Implied   | 16 x 8               | RAM32M16 x 1  | 
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|axi_dmac    | i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg | 128 x 64(NO_CHANGE)    | W |   | 128 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
++------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                 | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+|axi_dmac    | i_regmap/i_regmap_request/i_transfer_lenghts_fifo/fifo.sync_clocks.ram_reg | Implied   | 4 x 26               | RAM32M16 x 2  | 
+|axi_dmac    | i_transfer/i_request_arb/eot_mem_src_reg                                   | Implied   | 16 x 1               | RAM16X1D x 1  | 
+|axi_dmac    | i_transfer/i_request_arb/eot_mem_dest_reg                                  | Implied   | 16 x 1               | RAM16X1D x 2  | 
+|axi_dmac    | i_transfer/i_request_arb/i_store_and_forward/burst_len_mem_reg             | Implied   | 8 x 4                | RAM32M16 x 1  | 
+|axi_dmac    | i_transfer/i_request_arb/i_dest_dma_mm/bl_mem_reg                          | Implied   | 16 x 8               | RAM32M16 x 1  | 
++------------+----------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY8   |     9|
+|3     |LUT1     |    30|
+|4     |LUT2     |    49|
+|5     |LUT3     |    96|
+|6     |LUT4     |    81|
+|7     |LUT5     |    92|
+|8     |LUT6     |   154|
+|9     |RAM16X1D |     3|
+|10    |RAM32M   |     1|
+|11    |RAM32M16 |     3|
+|12    |RAMB36E2 |     1|
+|13    |FDPE     |    15|
+|14    |FDRE     |   724|
+|15    |FDSE     |    23|
+|16    |IBUF     |   128|
+|17    |OBUF     |   591|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------+---------------------------------+------+
+|      |Instance                          |Module                           |Cells |
++------+----------------------------------+---------------------------------+------+
+|1     |top                               |                                 |  2003|
+|2     |  i_regmap                        |axi_dmac_regmap                  |   649|
+|3     |    i_regmap_request              |axi_dmac_regmap_request          |   223|
+|4     |      i_transfer_lenghts_fifo     |util_axis_fifo                   |    58|
+|5     |        \fifo.i_address_gray      |util_axis_fifo_address_generator |    21|
+|6     |    i_up_axi                      |up_axi                           |   352|
+|7     |  i_transfer                      |axi_dmac_transfer                |   632|
+|8     |    i_request_arb                 |dmac_request_arb                 |   577|
+|9     |      i_dest_dma_mm               |dmac_dest_mm_axi                 |   106|
+|10    |        i_addr_gen                |dmac_address_generator           |    93|
+|11    |        i_response_handler        |dmac_response_handler            |    12|
+|12    |      i_dest_req_fifo             |util_axis_fifo__parameterized1   |    42|
+|13    |        \zerodeep.i_raddr_sync    |sync_bits_12                     |     7|
+|14    |        \zerodeep.i_waddr_sync    |sync_bits_13                     |     3|
+|15    |      i_req_gen                   |dmac_request_generator           |    73|
+|16    |      i_response_manager          |axi_dmac_response_manager        |    70|
+|17    |        i_dest_response_fifo      |util_axis_fifo__parameterized3   |    29|
+|18    |          \zerodeep.i_raddr_sync  |sync_bits_10                     |     4|
+|19    |          \zerodeep.i_waddr_sync  |sync_bits_11                     |    13|
+|20    |      i_src_dest_bl_fifo          |util_axis_fifo__parameterized0   |    15|
+|21    |        \zerodeep.i_raddr_sync    |sync_bits_8                      |     4|
+|22    |        \zerodeep.i_waddr_sync    |sync_bits_9                      |     5|
+|23    |      i_src_dma_fifo              |dmac_src_fifo_inf                |    53|
+|24    |        i_data_mover              |dmac_data_mover                  |    52|
+|25    |      i_src_req_fifo              |util_axis_fifo__parameterized2   |    77|
+|26    |        \zerodeep.i_raddr_sync    |sync_bits_6                      |     5|
+|27    |        \zerodeep.i_waddr_sync    |sync_bits_7                      |     2|
+|28    |      i_store_and_forward         |axi_dmac_burst_memory            |    81|
+|29    |        i_dest_sync_id            |sync_bits__parameterized0_4      |    10|
+|30    |        i_mem                     |ad_mem_asym                      |     2|
+|31    |        i_src_sync_id             |sync_bits__parameterized0_5      |    10|
+|32    |      i_sync_req_response_id      |sync_bits__parameterized0        |     8|
+|33    |      i_sync_src_request_id       |sync_bits__parameterized0_3      |    10|
+|34    |    i_reset_manager               |axi_dmac_reset_manager           |    55|
+|35    |      i_sync_control_dest         |sync_bits                        |     2|
+|36    |      i_sync_control_src          |sync_bits_0                      |     2|
+|37    |      i_sync_status_dest          |sync_bits_1                      |     6|
+|38    |      i_sync_status_src           |sync_bits_2                      |     2|
++------+----------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1660.156 ; gain = 416.688
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1660.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1660.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 138 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 128 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances
+
+Synth Design complete, checksum: 5efd0115
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1660.156 ; gain = 416.688
+INFO: [Common 17-1381] The checkpoint 'B:/test_dmac/dmac_ip/dmac_ip.runs/synth_1/axi_dmac.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_dmac_utilization_synth.rpt -pb axi_dmac_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  2 17:27:13 2021...

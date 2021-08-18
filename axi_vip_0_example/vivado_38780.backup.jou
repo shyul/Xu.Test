@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Aug  6 19:52:24 2021
+# Process ID: 38780
+# Current directory: c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter_sim/axi_vip_0_ex
+# Command line: vivado.exe -notrace -source c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter/.Xil/axi_vip_0/tmp_axi_vip_0.gen/sources_1/ip/axi_vip_0/axi_vip_0_ex.tcl
+# Log file: c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter_sim/axi_vip_0_ex/vivado.log
+# Journal file: c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter_sim/axi_vip_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter/.Xil/axi_vip_0/tmp_axi_vip_0.gen/sources_1/ip/axi_vip_0/axi_vip_0_ex.tcl -notrace
+update_compile_order -fileset sources_1

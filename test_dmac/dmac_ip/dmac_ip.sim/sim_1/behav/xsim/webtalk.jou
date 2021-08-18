@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Aug  6 19:24:23 2021
+# Process ID: 59332
+# Current directory: C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.sim/sim_1/behav/xsim/xsim.dir/my_axi_ip_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.sim/sim_1/behav/xsim/xsim.dir/my_axi_ip_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace

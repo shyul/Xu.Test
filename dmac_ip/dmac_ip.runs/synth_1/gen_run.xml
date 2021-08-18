@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xczu3cg-sfvc784-1-e" LaunchTime="1627939584">
   <File Type="PA-TCL" Name="axi_dmac.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="axi_dmac_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="axi_dmac_reports.tcl"/>
   <File Type="RDS-RDS" Name="axi_dmac.vds"/>
   <File Type="RDS-UTIL" Name="axi_dmac_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="axi_dmac_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="axi_dmac.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="axi_dmac_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="axi_dmac_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/axi_dmac/2d_transfer.v">
@@ -22,7 +19,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/common/ad_mem.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/common/ad_mem.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/common/ad_mem.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -31,7 +28,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/common/ad_mem_asym.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/common/ad_mem_asym.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/common/ad_mem_asym.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -254,7 +251,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/util_cdc/sync_bits.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_cdc/sync_bits.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_cdc/sync_bits.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -263,7 +260,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/util_cdc/sync_event.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_cdc/sync_event.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_cdc/sync_event.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -272,7 +269,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/util_cdc/sync_gray.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_cdc/sync_gray.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_cdc/sync_gray.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -281,7 +278,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/common/up_axi.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/common/up_axi.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/common/up_axi.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -290,7 +287,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/util_axis_fifo/util_axis_fifo.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_axis_fifo/util_axis_fifo.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_axis_fifo/util_axis_fifo.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -299,7 +296,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/util_axis_fifo/util_axis_fifo_address_generator.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_axis_fifo/util_axis_fifo_address_generator.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_axis_fifo/util_axis_fifo_address_generator.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -417,7 +414,7 @@
     <File Path="$PSRCDIR/sources_1/imports/util_cdc/sync_data.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Download/hdl-master/library/util_cdc/sync_data.v"/>
+        <Attr Name="ImportPath" Val="B:/Download/hdl-master/library/util_cdc/sync_data.v"/>
         <Attr Name="ImportTime" Val="1627899026"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -443,9 +440,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

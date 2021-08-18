@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Aug  6 19:53:51 2021
+# Process ID: 51756
+# Current directory: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41504 C:\Users\uxli\Documents\Tidalloft\tungsten-grid\ip_project\axi_vip_0_example\axi_vip_0_ex.xpr
+# Log file: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/vivado.log
+# Journal file: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.xpr
+INFO: [Project 1-313] Project file moved from 'c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/m_axi_full_adapter_sim/axi_vip_0_ex' since last save.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/uxli/Documents/Tidalloft/ip_repo/m_axi_full_adapter'; using path 'c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_repo/m_axi_full_adapter' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_repo/m_axi_full_adapter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1248.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+[Fri Aug  6 19:54:59 2021] Launched ex_sim_axi_vip_slv_0_synth_1, ex_sim_axi_vip_mst_0_synth_1, ex_sim_axi_vip_passthrough_0_synth_1...
+Run output will be captured here:
+ex_sim_axi_vip_slv_0_synth_1: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_slv_0_synth_1/runme.log
+ex_sim_axi_vip_mst_0_synth_1: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_mst_0_synth_1/runme.log
+ex_sim_axi_vip_passthrough_0_synth_1: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/runme.log
+[Fri Aug  6 19:55:00 2021] Launched synth_1...
+Run output will be captured here: C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/synth_1/runme.log
+open_bd_design {C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/ex_sim.bd}
+Reading block design file <C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/ex_sim.bd>...
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_mst
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_passthrough
+Adding component instance block -- xilinx.com:ip:axi_vip:1.1 - axi_vip_slv
+Successfully read diagram <ex_sim> from block design file <C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/ex_sim.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1248.223 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  7 14:30:26 2021...

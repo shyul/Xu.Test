@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: my_axi_ip_v1_0_tb.DUT.my_axi_ip_v1_0_bfm_1_i.master_0.inst
+XilinxAXIVIP: Found at Path: my_axi_ip_v1_0_tb.DUT.my_axi_ip_v1_0_bfm_1_i.slave_0.inst
+Sequential write transfers example similar to  AXI BFM WRITE_BURST method starts
+Sequential write transfers example similar to  AXI BFM WRITE_BURST method completes
+Sequential read transfers example similar to  AXI BFM READ_BURST method starts
+TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000001 actual   = 0x0000000000000000000000000000000000000000000000000000000000000001
+TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000002 actual   = 0x0000000000000000000000000000000000000000000000000000000000000002
+TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000003 actual   = 0x0000000000000000000000000000000000000000000000000000000000000003
+TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000004 actual   = 0x0000000000000000000000000000000000000000000000000000000000000004
+Sequential read transfers example similar to  AXI BFM READ_BURST method completes
+Sequential read transfers example similar to  AXI VIP READ_BURST method completes
+---------------------------------------------------------
+EXAMPLE TEST S00_AXI: PTGEN_TEST_FINISHED!
+PTGEN_TEST: PASSED!
+---------------------------------------------------------
+EXAMPLE TEST M00_AXI:
+M00_AXI: PTGEN_TEST_FINISHED!
+PTGEN_TEST: PASSED!
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 48956 ns : File "C:/Users/uxli/Documents/GitHub/Xu.Test/test_dmac/dmac_ip/dmac_ip.srcs/sim_1/imports/bfm_design/my_axi_ip_v1_0_tb.sv" Line 164

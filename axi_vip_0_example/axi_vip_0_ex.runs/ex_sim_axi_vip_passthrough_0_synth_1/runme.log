@@ -1,0 +1,208 @@
+
+*** Running vivado
+    with args -log ex_sim_axi_vip_passthrough_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex_sim_axi_vip_passthrough_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source ex_sim_axi_vip_passthrough_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_repo/m_axi_full_adapter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.cache/ip 
+Command: synth_design -top ex_sim_axi_vip_passthrough_0 -part xczu3cg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3cg'
+INFO: [Device 21-403] Loading part xczu3cg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 60440
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1565.348 ; gain = 122.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ex_sim_axi_vip_passthrough_0' [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/synth/ex_sim_axi_vip_passthrough_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_vip_v1_1_10_top' [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ipshared/0980/hdl/axi_vip_v1_1_vlsyn_rfs.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vip_v1_1_10_top' (1#1) [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ipshared/0980/hdl/axi_vip_v1_1_vlsyn_rfs.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'ex_sim_axi_vip_passthrough_0' (2#1) [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/synth/ex_sim_axi_vip_passthrough_0.sv:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1612.289 ; gain = 169.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1630.195 ; gain = 187.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1630.195 ; gain = 187.570
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1630.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/ex_sim_axi_vip_passthrough_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.gen/sources_1/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/ex_sim_axi_vip_passthrough_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1669.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1669.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1669.609 ; gain = 226.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3cg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1669.609 ; gain = 226.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1669.609 ; gain = 226.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1669.609 ; gain = 226.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1669.609 ; gain = 226.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2237.012 ; gain = 794.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2237.012 ; gain = 794.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2256.121 ; gain = 813.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 2261.770 ; gain = 779.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.770 ; gain = 819.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2261.770 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 322bdb51
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2307.703 ; gain = 1051.004
+INFO: [Common 17-1381] The checkpoint 'C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/ex_sim_axi_vip_passthrough_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ex_sim_axi_vip_passthrough_0, cache-ID = 160e908ba07ad585
+INFO: [Common 17-1381] The checkpoint 'C:/Users/uxli/Documents/Tidalloft/tungsten-grid/ip_project/axi_vip_0_example/axi_vip_0_ex.runs/ex_sim_axi_vip_passthrough_0_synth_1/ex_sim_axi_vip_passthrough_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ex_sim_axi_vip_passthrough_0_utilization_synth.rpt -pb ex_sim_axi_vip_passthrough_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  6 19:56:05 2021...
